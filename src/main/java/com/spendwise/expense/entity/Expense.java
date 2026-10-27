@@ -39,8 +39,14 @@ public class Expense {
     }
 
     public Expense(BigDecimal amount, LocalDate spentAt, Category category) {
+        this(amount, spentAt, null, category);
+    }
+
+
+    public Expense(BigDecimal amount, LocalDate spentAt, String description, Category category) {
         this.amount = amount;
         this.spentAt = spentAt;
+        this.description = description;
         this.category = category;
     }
 }

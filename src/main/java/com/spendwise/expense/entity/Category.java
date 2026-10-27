@@ -1,8 +1,10 @@
 package com.spendwise.expense.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 @Entity
+@Getter
 public class Category {
 
     protected Category(){}
